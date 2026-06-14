@@ -1,19 +1,20 @@
+//Write a program to Find x^n without pow().
+
 #include <stdio.h>
 
-int main() {
-    double x, result = 1.0;
-    int n;
-    printf("Enter base (x) and exponent (n): ");
-    scanf("%lf %d", &x, &n);
+int main()
+{
+int x, n, r = 1;
+printf("Enter base (x): ");
+scanf("%d", &x);
+printf("Enter power (n): ");
+scanf("%d", &n);
 
-    int abs_n = n < 0 ? -n : n;
-
-    for (int i = 0; i < abs_n; i++) {
-        result *= x;
+for (int j = 1; j <= n; j++) 
+    {
+        r = r * x;
     }
+printf("%d^%d = %d\n", x, n, r);
+return 0;
 
-    if (n < 0) result = 1.0 / result;
-
-    printf("Result: %.2f", result);
-    return 0;
 }
