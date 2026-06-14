@@ -1,12 +1,22 @@
-#include <stdio.h>
+//Write a program to Recursive reverse number.
 
-int reverse(int n, int rev) {
-    if (n == 0) return rev;
-    return reverse(n / 10, rev * 10 + (n % 10));
+#include <stdio.h>
+int r = 0;
+int f(int n) 
+{
+    if (n == 0)
+    return r;
+
+    r = r * 10 + (n % 10);
+    return f(n / 10);
 }
 
-int main() {
-    int num = 12345;
-    printf("Reverse of %d is %d\n", num, reverse(num, 0));
-    return 0;
+int main() 
+{
+    int n;
+    intf("Enter a number: ");
+    scanf("%d", &n);
+    printf("Reversed number = %d\n", f(n));
+return 0;
+
 }
