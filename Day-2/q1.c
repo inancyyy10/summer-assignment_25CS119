@@ -1,3 +1,4 @@
+//Write a program to Find sum of digits of a number.
 #include <stdio.h>
 int main() {
     int n, sum = 0, last;
