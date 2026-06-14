@@ -1,15 +1,20 @@
+//Write a program to Count set bits in a number
+
 #include <stdio.h>
+int main() 
+{
+  int n, c = 0;
+  printf("Enter a number: ");
+  scanf("%d", &n);
 
-int main() {
-    int n, count = 0;
-    printf("Enter number: ");
-    scanf("%d", &n);
+    while (n > 0)
+      {
+        if (n % 2 == 1)
+            c++;
 
-    while (n > 0) {
-        n = n & (n - 1); 
-        count++;
-    }
+        n = n / 2;
+     }
+printf("Number of set bits = %d\n", c);
+return 0;
 
-    printf("Set bits: %d", count);
-    return 0;
 }
