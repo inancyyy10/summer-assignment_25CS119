@@ -1,20 +1,30 @@
-//Write a program to Recursive factorial.
+//Write a program to Convert decimal to binary.
+
 #include <stdio.h>
+int main() 
+{
+int d, b[32], j = 0;
+printf("Enter a decimal number: ");
+scanf("%d", &d);
 
-int main() {
-    int n, binary[32], i = 0;
-    printf("Enter a decimal number: ");
-    scanf("%d", &n);
-
-    if (n == 0) printf("0");
-
-    while (n > 0) {
-        binary[i++] = n % 2;
-        n /= 2;
+if (d == 0) 
+    {
+        printf("Binary: 0\n");
+        return 0;
     }
+while (d > 0)
+    {
+        b[j] = d % 2;
+        d = d / 2;
+        j++;
+    }
+printf("Binary: ");
 
-    for (int j = i - 1; j >= 0; j--)
-        printf("%d", binary[j]);
+for (int k = j - 1; k >= 0; k--)
+    {
+        printf("%d", b[k]);
+    }
+printf("\n");
+return 0;
 
-    return 0;
 }
