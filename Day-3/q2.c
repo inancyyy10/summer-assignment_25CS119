@@ -1,3 +1,4 @@
+//Write a program to Print prime numbers in a range.
 #include <stdio.h>
 int main() {
     int start, end, i, j, isPrime;
