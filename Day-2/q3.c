@@ -1,3 +1,4 @@
+//Write a program to Find product of digits.
 #include <stdio.h>
 int main() {
     int n, product = 1, l;
