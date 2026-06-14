@@ -1,3 +1,4 @@
+//Write a program to Count digits in a number.
 #include <stdio.h>
 
 int main()
