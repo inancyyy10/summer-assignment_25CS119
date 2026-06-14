@@ -1,12 +1,20 @@
-#include <stdio.h>
+//Write a program to Print half pyramid pattern.
 
-int main() {
-    int i, j;
-    for (i = 1; i <= 5; i++) {
-        for (j = 1; j <= i; j++) {
-            printf("*");
+#include <stdio.h>
+int main() 
+{
+int r, i, j;
+printf("Enter rows: ");
+scanf("%d", &r);
+
+  for(i = 1; i <= r; i++)
+    {
+      for(j = 1; j <= i; j++)
+         {
+            printf("* ");
         }
-        printf("\n");
+      printf("\n");
     }
-    return 0;
+return 0;
+
 }
