@@ -1,4 +1,5 @@
 //Write a program to Check whether a number is palindrome.
+
 #include <stdio.h>
 int main() {
     int n, reversed = 0, rem, org;
